@@ -1,0 +1,166 @@
+
+.home {
+    min-height: 100vh;
+    min-width: 100%;
+
+    background-image: url("/public/fond2.2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.title{
+
+    font-size: 5rem;
+    line-height: 7rem;
+    flex-wrap: wrap;
+    color: white;
+    margin: 0;
+
+
+}
+
+
+.canvasContainer{
+    width: 40%;
+
+
+
+}
+
+.gros{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.welcome{
+
+    font-size: 1.2rem;
+    background: rgb(9,14,27);
+    background: linear-gradient(90deg, rgba(9,14,27,1) 0%, rgba(0,0,0,1) 100%);
+    width: 30%;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 5rem;
+    border-radius: 1rem;
+    border: white solid 1px;
+
+
+
+}
+
+.subtitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation{
+
+    font-size: 1.3rem;
+    color: #878787;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    flex-wrap: wrap;
+
+}
+
+.homeContent{
+    display: flex;
+    flex-direction: column;
+    margin-left : 8rem;
+    width: 80%;
+    margin-top: 5rem;
+
+
+
+}
+.navBar{
+
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.center{
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.buttonLink{
+
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-style: normal;
+    margin: 1.5rem;
+    padding: 1rem;
+    font-weight: lighter;
+
+
+}
+.buttonCircularLink{
+    color: white;
+    background-color:#1D1A2A;
+    margin: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: white solid 1px;
+
+
+
+
+ }
+.circularLinkContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagramLogo{
+    width: 70%;
+    height: 70%;
+}
+
+.nextContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.nextImg{
+    width: 5rem;
+    height: 5rem;
+    margin-top : 7rem
+}
+
+
+
