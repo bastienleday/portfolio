@@ -5,6 +5,8 @@ import NavBar from "./NavBar.jsx";
 import Next from "./Next.jsx";
 import Viewer from "./Viewer.jsx";
 import { Canvas } from '@react-three/fiber'
+import responsiveCSS from "./componentsCSS/responsiveCSS.css";
+import Content from "./componentsCSS/Content.css";
 
 
 
@@ -16,6 +18,7 @@ export default function Home() {
 
 
     return (
+        <>
 
         <div className="home">
             <NavBar/>
@@ -43,6 +46,13 @@ export default function Home() {
 
             </div>
         </div>
+            <div className="contentContainer">
+
+
+            </div>
+        </>
+
+
 
 
 
