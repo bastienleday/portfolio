@@ -1,15 +1,15 @@
 .skillContainer {
 	width: 100%;
-	height: 30rem;
+	height: 10rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: rgba(5, 5, 5, 0.96);
-	background-image: url("/public/metal.jpg");
+	background-color: #07060a;
+
 	background-blend-mode: darken;
 
-	box-shadow: 0px 15px 70px -30px rgba(68, 58, 156, 0.84);
+	box-shadow: 0px 15px 70px -30px rgba(68, 58, 156, 0.5);
 	z-index: 1;
 }
 
@@ -18,8 +18,8 @@
 	height: 100vh;
 
 	background: linear-gradient(
-		90deg,
-		rgba(9, 14, 27, 1) 0%,
+		45deg,
+		rgba(9, 14, 27, 1) 10%,
 		rgba(0, 0, 0, 1) 100%
 	);
 }
@@ -35,14 +35,14 @@
 .skillContent {
 	display: flex;
 	flex-direction: row;
-	overflow-x: visible;
+
 	height: 100%;
 }
 
 .skillsLogo {
-	width: 10%;
-
-	margin: 1rem auto auto auto;
+	width: 5%;
+	opacity: 0.5;
+	margin: auto;
 }
 .skillsWrapper {
 	display: flex;

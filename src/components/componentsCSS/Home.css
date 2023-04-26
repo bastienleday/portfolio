@@ -3,7 +3,9 @@
 	min-width: 100%;
 
 	background-image: url("/public/fond2.3.jpg");
+
 	background-size: cover;
+
 	background-repeat: no-repeat;
 	display: flex;
 	flex-direction: column;

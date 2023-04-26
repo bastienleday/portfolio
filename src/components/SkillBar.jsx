@@ -4,7 +4,7 @@ import Skills from "./Skills.jsx";
 export default function SkillBar({ children }) {
 	const skillContainer = useRef(null);
 
-	useEffect(() => {
+	/*useEffect(() => {
 		const options = {
 			threshold: 1, // Le pourcentage de visibilité de l'élément dans le viewport pour déclencher l'animation
 		};
@@ -14,7 +14,7 @@ export default function SkillBar({ children }) {
 				if (entry.isIntersecting) {
 					// Vérifier si l'élément est visible dans le viewport
 					gsap.to(entry.target, {
-						y: 280,
+						y: 260,
 						duration: 1,
 						delay: 0.2,
 						scrollTrigger: {
@@ -36,7 +36,7 @@ export default function SkillBar({ children }) {
 			// Nettoyer l'observer lors du démontage du composant
 			observer.disconnect();
 		};
-	}, []);
+	}, []);*/
 
 	return (
 		<div className="skillContainer">
