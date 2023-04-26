@@ -1,4 +1,4 @@
-import react from 'react';
+import react, {useEffect} from 'react';
 import './componentsCSS/Home.css';
 import Welcome from "./Welcome.jsx";
 import NavBar from "./NavBar.jsx";
@@ -7,6 +7,9 @@ import Viewer from "./Viewer.jsx";
 import { Canvas } from '@react-three/fiber'
 import responsiveCSS from "./componentsCSS/responsiveCSS.css";
 import Content from "./componentsCSS/Content.css";
+import Skills from "./Skills.jsx";
+import {useRef} from "react";
+import SkillBar from "./SkillBar.jsx";
 
 
 
@@ -15,6 +18,8 @@ import Content from "./componentsCSS/Content.css";
 
 
 export default function Home() {
+
+
 
 
     return (
@@ -46,8 +51,23 @@ export default function Home() {
 
             </div>
         </div>
-            <div className="contentContainer">
-
+          <SkillBar>
+              <Skills logo={"/public/skillsLogo/nodejs.png"}/>
+              <Skills logo={"/public/skillsLogo/ps.png"}/>
+              <Skills logo={"/public/skillsLogo/psql.png"}/>
+              <Skills logo={"/public/skillsLogo/react.png"}/>
+              <Skills logo={"/public/skillsLogo/substance.png"}/>
+              <Skills logo={"/public/skillsLogo/threejs.png"}/>
+              <Skills logo={"/public/skillsLogo/blender.png"}/>
+              <Skills logo={"/public/skillsLogo/js.png"}/>
+              <Skills logo={"/public/skillsLogo/nodejs.png"}/>
+              <Skills logo={"/public/skillsLogo/ps.png"}/>
+              <Skills logo={"/public/skillsLogo/psql.png"}/>
+              <Skills logo={"/public/skillsLogo/react.png"}/>
+              <Skills logo={"/public/skillsLogo/substance.png"}/>
+              <Skills logo={"/public/skillsLogo/threejs.png"}/>
+            </SkillBar>
+            <div className="projectsContainer">
 
             </div>
         </>
