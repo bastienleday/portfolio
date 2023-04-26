@@ -45,6 +45,7 @@ export default function Home() {
 				</div>
 			</div>
 			<SkillBar>
+
 				<Skills logo={"/public/skillsLogo/nodejs.png"} />
 				<Skills logo={"/public/skillsLogo/ps.png"} />
 				<Skills logo={"/public/skillsLogo/psql.png"} />

@@ -2,53 +2,53 @@ import react, { useEffect, useRef, useState } from "react";
 import Skills from "./Skills.jsx";
 
 export default function SkillBar({ children }) {
-	const [scrollX, setScrollX] = useState(0);
+
 
 	const skillContainer = useRef(null);
 
-	//mise en place d'un observer
-	const observer = new IntersectionObserver((entries) => {
-		entries.forEach((entry) => {
-			if (entry.isIntersecting) {
-				console.log("intersecting");
-			}
-		});
-	});
+
 
 	useEffect(() => {
-		//calculer la position de l'élément par rapport au haut de la page
-		function offSetTop(element, acc = 0) {
-			if (!element.offsetParent) {
-				return offSetTop(element.offsetParent, acc + element.offsetTop);
-			}
-			return acc + element.offsetTop;
+
+		const options = {
+			threshold: 0.5, // Le pourcentage de visibilité de l'élément dans le viewport pour déclencher l'animation
+		};
+
+		const skillBarMove = (entries, observer) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					// Vérifier si l'élément est visible dans le viewport
+					gsap.to(entry.target, {
+						y: 250,
+						duration: 2,
+						delay: 0.2,
+						scrollTrigger: {
+							trigger: ".skillContainer",
+
+						}
+					});
+					observer.unobserve(entry.target); // Arrêter d'observer une fois que l'animation est déclenchée
+				}
+			});
+		};
+
+		const observer = new IntersectionObserver(skillBarMove, options);
+		if (skillContainer.current) {
+			observer.observe(skillContainer.current); // Commencer à observer l'élément au chargement du composant
 		}
 
-		const handleScroll = (e) => {
-			const scrollY = window.scrollY || document.documentElement.scrollTop;
-			setScrollX((prevScrollX) => prevScrollX + scrollY);
-
-			const screenY = window.scrollY + window.innerHeight / 2;
-			const elementY =
-				offSetTop(skillContainer.current) +
-				skillContainer.current.offsetHeight / 2;
-			const diffy = elementY - screenY;
-
-			skillContainer.current.style.transform = `translateX(${
-				diffy * -1 * 2
-			}px)`;
-		};
-
-		document.addEventListener("scroll", handleScroll);
-
 		return () => {
-			document.removeEventListener("scroll", handleScroll);
+			// Nettoyer l'observer lors du démontage du composant
+			observer.disconnect();
 		};
+
+
 	}, []);
 
 	return (
 		<div className="skillContainer">
 			<div className="skillContent" ref={skillContainer}>
+
 				{children}
 			</div>
 		</div>
