@@ -10,20 +10,21 @@ export default function ProjectCard({ title, description, image, link }) {
 			threshold: 0.2, // Le pourcentage de visibilité de l'élément dans le viewport pour déclencher l'animation
 		};
 
-		const callback = (entries, observer) => {
+		const cardMove = (entries, observer) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
 					// Vérifier si l'élément est visible dans le viewport
 					gsap.to(entry.target, {
 						x: 200,
 						duration: 2,
+						delay: 0.2,
 					});
 					observer.unobserve(entry.target); // Arrêter d'observer une fois que l'animation est déclenchée
 				}
 			});
 		};
 
-		const observer = new IntersectionObserver(callback, options);
+		const observer = new IntersectionObserver(cardMove, options);
 		if (main.current) {
 			observer.observe(main.current); // Commencer à observer l'élément au chargement du composant
 		}
