@@ -2,7 +2,7 @@
 	min-height: 100vh;
 	min-width: 100%;
 
-	background-image: url("/public/fond2.4.jpg");
+	background-image: url("/src/divers/pictures/fond2.4.jpg");
 
 	background-size: cover;
 
@@ -23,6 +23,8 @@
 	width: 25%;
 	margin-top: 20rem;
 	margin-right: 15rem;
+	position: fixed;
+	right: 0.2rem;
 }
 
 .gros {

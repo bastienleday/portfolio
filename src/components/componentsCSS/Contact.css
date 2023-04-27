@@ -84,3 +84,11 @@ textarea{
         transform: scale(1);
     }
 }
+
+.footer{
+    background-color: #030303;
+    border-top: 1px rgba(9, 14, 27, 1) solid;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+}

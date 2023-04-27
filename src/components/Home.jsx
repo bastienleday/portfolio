@@ -12,6 +12,7 @@ import { useRef } from "react";
 import SkillBar from "./SkillBar.jsx";
 import ProjectCard from "./ProjectCard";
 import Contact from "./Contact.jsx";
+import Footer from "./Footer.jsx";
 
 export default function Home() {
 	return (
@@ -47,20 +48,20 @@ export default function Home() {
 			</div>
 			<SkillBar>
 
-				<Skills logo={"/public/skillsLogo/nodejs.png"} />
-				<Skills logo={"/public/skillsLogo/ps.png"} />
-				<Skills logo={"/public/skillsLogo/psql.png"} />
-				<Skills logo={"/public/skillsLogo/react.png"} />
-				<Skills logo={"/public/skillsLogo/substance.png"} />
-				<Skills logo={"/public/skillsLogo/threejs.png"} />
-				<Skills logo={"/public/skillsLogo/blender.png"} />
-				<Skills logo={"/public/skillsLogo/js.png"} />
-				<Skills logo={"/public/skillsLogo/nodejs.png"} />
-				<Skills logo={"/public/skillsLogo/ps.png"} />
-				<Skills logo={"/public/skillsLogo/psql.png"} />
-				<Skills logo={"/public/skillsLogo/react.png"} />
-				<Skills logo={"/public/skillsLogo/substance.png"} />
-				<Skills logo={"/public/skillsLogo/threejs.png"} />
+				<Skills logo={"src/divers/skillsLogo/nodejs.png"} />
+				<Skills logo={"src/divers/skillsLogo/ps.png"} />
+				<Skills logo={"src/divers/skillsLogo/psql.png"} />
+				<Skills logo={"src/divers/skillsLogo/react.png"} />
+				<Skills logo={"src/divers/skillsLogo/substance.png"} />
+				<Skills logo={"src/divers/skillsLogo/threejs.png"} />
+				<Skills logo={"src/divers/skillsLogo/blender.png"} />
+				<Skills logo={"src/divers/skillsLogo/js.png"} />
+				<Skills logo={"src/divers/skillsLogo/nodejs.png"} />
+				<Skills logo={"src/divers/skillsLogo/ps.png"} />
+				<Skills logo={"src/divers/skillsLogo/psql.png"} />
+				<Skills logo={"src/divers/skillsLogo/react.png"} />
+				<Skills logo={"src/divers/skillsLogo/substance.png"} />
+				<Skills logo={"src/divers/skillsLogo/threejs.png"} />
 			</SkillBar>
 			<div className="projectsContainer">
 				<div className="projectTitle">
@@ -82,6 +83,7 @@ export default function Home() {
 			</div>
 
 			<Contact/>
+			<Footer/>
 		</>
 	);
 }

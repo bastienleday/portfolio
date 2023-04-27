@@ -5,7 +5,7 @@ export default function Next() {
 
     return (
 
-        <img src={'/public/next.png'} className="nextImg"></img>
+        <img src={'src/divers/pictures/next.png'} className="nextImg"></img>
 
 
     )

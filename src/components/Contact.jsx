@@ -19,7 +19,11 @@ export default function Contact() {
    }
 
     const handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault()
+
+
+
+
         emailjs.sendForm('service_hzcrmdn', 'template_0zgchvh', form.current, 'mSoC3LeQ5UjAXJVBi')
             .then((result) => {
                 console.log(result.text);
@@ -38,21 +42,21 @@ export default function Contact() {
             <form className="form" onSubmit={handleSubmit} id="contactForm" ref={form}>
                 <label>
                     Subject:
-                    <input type="text" name="subject" value={formData.subject} onChange={handleChange} />
+                    <input type="text" name="subject" value={formData.subject} onChange={handleChange} required={true} />
                 </label>
                 <label>
                     Name:
-                    <input type="text" name="name" value={formData.name} onChange={handleChange}/>
+                    <input type="text" name="name" value={formData.name} onChange={handleChange} required={true}/>
                 </label>
                 <label>
                     Email:
-                    <input type="text" name="email" value={formData.email} onChange={handleChange}/>
+                    <input type="text" name="email" value={formData.email} onChange={handleChange} required={true}/>
                 </label>
                 <label>
                     Message:
                 </label>
 
-                    <textarea type="text" name="message" value={formData.message} onChange={handleChange} />
+                    <textarea type="text" name="message" value={formData.message} onChange={handleChange} required={true} />
 
                 <input type="submit" value="Submit" className="submit" />
 

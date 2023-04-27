@@ -58,8 +58,8 @@ export default function ProjectCard({children, techno }) {
 		<div className="projectCard" id="projectCard" ref={main}>
 			<p>{children}</p>
 			<ul>
-				{techno.map((techno) => (
-					<li>{techno}</li>
+				{techno.map((techno, index) => (
+					<li key={index}>{techno}</li>
 				))}
 
 			</ul>
