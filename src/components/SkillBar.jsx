@@ -1,5 +1,10 @@
 import react, { useEffect, useRef, useState } from "react";
 import Skills from "./Skills.jsx";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
+
+// Register ScrollTrigger with gsap
+gsap.registerPlugin(ScrollTrigger);
 
 export default function SkillBar({ children }) {
 	const skillContainer = useRef(null);
@@ -14,12 +19,18 @@ export default function SkillBar({ children }) {
 				if (entry.isIntersecting) {
 					// Vérifier si l'élément est visible dans le viewport
 					gsap.to(entry.target, {
-						y: 260,
+
 						duration: 1,
 						delay: 0.2,
+						display: "flex",
+						opacity: 1,
 						scrollTrigger: {
-							trigger: ".skillContainer",
+							trigger: ".title",
 							start: "top 20%",
+							end: "bottom 30%",
+							toggleActions: "restart none none reverse",
+
+
 						},
 					});
 					observer.unobserve(entry.target); // Arrêter d'observer une fois que l'animation est déclenchée

@@ -50,11 +50,12 @@
 .skillContent {
 	display: flex;
 	flex-direction: row;
-
 	height: 100%;
+	opacity: 0;
 }
 
 .skillsLogo {
+
 	width: 5%;
 	opacity: 0.8;
 	margin: auto;

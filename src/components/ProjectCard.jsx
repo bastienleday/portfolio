@@ -1,6 +1,10 @@
 import React from "react";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+// Register ScrollTrigger with gsap
+gsap.registerPlugin(ScrollTrigger);
 
 
 export default function ProjectCard({children, techno }) {
@@ -19,6 +23,20 @@ export default function ProjectCard({children, techno }) {
 						x: 700,
 						duration: 1,
 						delay: 0.2,
+						scrollTrigger: {
+							trigger: ".skillContainer",
+							start: "top 60%",
+							end: "bottom 30%",
+							toggleActions: "restart none none reverse",
+							markers:{
+								startColor: "red",
+								endColor: "red",
+								fontSize: "20px",
+							}
+
+
+						}
+
 					});
 					observer.unobserve(entry.target); // Arrêter d'observer une fois que l'animation est déclenchée
 				}
