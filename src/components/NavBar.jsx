@@ -7,10 +7,10 @@ export default function NavBar() {
         <nav className="navBar">
 
             <div className="circularLinkContainer">
-                <CircularLink link={'https://www.instagram.com/'}>
+                <CircularLink link={'https://www.linkedin.com/in/bastien-leday/'} >
                     in
                 </CircularLink>
-                <CircularLink link={'https://www.instagram.com/'}>
+                <CircularLink link={'https://github.com/bastienleday'}>
                     <img src={'src/divers/pictures/git.png'} alt={""} className="gitLogo"></img>
                 </CircularLink>
                 <CircularLink link={'https://www.instagram.com/'}>
