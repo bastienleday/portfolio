@@ -1,5 +1,4 @@
-import react from "react";
-import Link from "./Link.jsx";
+
 
 export default function Next() {
 

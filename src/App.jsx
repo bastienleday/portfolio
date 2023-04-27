@@ -1,22 +1,23 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import './App.css'
 import Home from './components/Home'
+import Loader from './components/Loader.jsx'
 
 
 
 function App() {
 
+    const [loading, setLoading] = useState(true)
 
-  return (
-    <>
-        <Home>
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false)
+        }, 4000)
+    }, [])
 
 
-        </Home>
-
-    </>
-  )
+  return loading ? <Loader /> : <Home />
 }
 
 export default App

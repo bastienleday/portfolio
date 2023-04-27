@@ -1,9 +1,9 @@
-import react, {useRef} from "react";
-import {Canvas, useFrame, useThree, useLoader} from '@react-three/fiber'
+import {useRef} from "react";
+import { useFrame, useLoader} from '@react-three/fiber'
 import { GLTFLoader} from "three/addons/loaders/GLTFLoader.js";
 
-import { SSR, Bloom, Glitch, EffectComposer} from "@react-three/postprocessing";
-import { useControls } from 'leva';
+import { Bloom, Glitch, EffectComposer} from "@react-three/postprocessing";
+
 
 export default function Viewer() {
 
@@ -33,7 +33,7 @@ export default function Viewer() {
 
     </EffectComposer>
 
-                <directionalLight  position={[-3, 4, 1]} color={'rgb(50, 50, 92)'} intensity={10}/>
+                <directionalLight  position={[-3, 4, 1]} color={'rgb(50, 50, 92)'} intensity={15}/>
 
     <mesh>
         <sphereBufferGeometry args={[0.6]}/>

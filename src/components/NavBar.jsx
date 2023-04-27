@@ -1,5 +1,4 @@
-import react from "react";
-import Link from "./Link.jsx";
+
 import CircularLink from "./CircularLink.jsx";
 
 export default function NavBar() {
