@@ -21,11 +21,15 @@
 
 .canvasContainer {
 	width: 25%;
+	height: 50%;
 	margin-top: 20rem;
 	margin-right: 15rem;
 	position: fixed;
-	right: 0.2rem;
+	right: 0;
+
 }
+
+
 
 .gros {
 	display: flex;

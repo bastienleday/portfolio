@@ -37,7 +37,7 @@ export default function Home() {
 						</p>
 					</div>
 					<div className="canvasContainer">
-						<Canvas>
+						<Canvas className="canvas">
 							<Viewer />
 						</Canvas>
 					</div>

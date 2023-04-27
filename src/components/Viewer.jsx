@@ -22,6 +22,7 @@ export default function Viewer() {
 
     return (
 <>
+
     <EffectComposer>
 <Glitch delay={[1.5, 3.5]} duration={[0.6, 1.0]} strength={[0.1, 0.2]} />
         <Bloom luminanceThreshold={0} luminanceSmoothing={0.2} height={300} opacity={2} />
