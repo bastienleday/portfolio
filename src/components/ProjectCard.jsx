@@ -3,11 +3,12 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
 
-export default function ProjectCard({ title, description, image, link }) {
+export default function ProjectCard({children, techno }) {
+
 	const main = useRef(null);
 	useEffect(() => {
 		const options = {
-			threshold: 0.2, // Le pourcentage de visibilité de l'élément dans le viewport pour déclencher l'animation
+			threshold: 0.4, // Le pourcentage de visibilité de l'élément dans le viewport pour déclencher l'animation
 		};
 
 		const cardMove = (entries, observer) => {
@@ -15,8 +16,8 @@ export default function ProjectCard({ title, description, image, link }) {
 				if (entry.isIntersecting) {
 					// Vérifier si l'élément est visible dans le viewport
 					gsap.to(entry.target, {
-						x: 200,
-						duration: 2,
+						x: 700,
+						duration: 1,
 						delay: 0.2,
 					});
 					observer.unobserve(entry.target); // Arrêter d'observer une fois que l'animation est déclenchée
@@ -37,7 +38,14 @@ export default function ProjectCard({ title, description, image, link }) {
 
 	return (
 		<div className="projectCard" id="projectCard" ref={main}>
-			<h1>carte 1</h1>
+			<p>{children}</p>
+			<ul>
+				{techno.map((techno) => (
+					<li>{techno}</li>
+				))}
+
+			</ul>
+
 		</div>
 	);
 }

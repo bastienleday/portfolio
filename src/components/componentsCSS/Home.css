@@ -2,7 +2,7 @@
 	min-height: 100vh;
 	min-width: 100%;
 
-	background-image: url("/public/fond2.3.jpg");
+	background-image: url("/public/fond2.4.jpg");
 
 	background-size: cover;
 
@@ -36,7 +36,7 @@
 	background: linear-gradient(
 		90deg,
 		rgba(9, 14, 27, 1) 0%,
-		rgba(0, 0, 0, 1) 100%
+		rgba(3, 3, 3, 1) 100%
 	);
 	width: 35%;
 
@@ -100,6 +100,13 @@
 	margin: 1.5rem;
 	padding: 1rem;
 	font-weight: lighter;
+	transition: all 0.1s ease-in-out;
+	cursor: pointer;
+
+}
+
+.buttonLink:hover{
+	transform: scale(1.1);
 }
 .buttonCircularLink {
 	color: white;
@@ -115,7 +122,27 @@
 	align-items: center;
 	border-radius: 50%;
 	border: white solid 1px;
+	transition: all 0.1s ease-in-out;
+
+
 }
+.buttonCircularLink:hover{
+	animation: circle 0.1s ease-in;
+	border:  2px solid #3d9dea;
+	box-shadow: 1px 2px 27px 2px #24CEFF;
+}
+@keyframes circle {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
 .circularLinkContainer {
 	display: flex;
 	flex-direction: row;
@@ -126,6 +153,11 @@
 .instagramLogo {
 	width: 70%;
 	height: 70%;
+}
+.gitLogo{
+	width: 100%;
+	height: 100%;
+
 }
 
 .nextContainer {
@@ -140,7 +172,7 @@
 .nextImg {
 	width: 5rem;
 	height: 5rem;
-	margin-top: 7rem;
+	margin-top: 3rem;
 	transform-origin: 10% 10%;
 	animation: test 1s linear alternate infinite;
 }

@@ -11,6 +11,7 @@ import Skills from "./Skills.jsx";
 import { useRef } from "react";
 import SkillBar from "./SkillBar.jsx";
 import ProjectCard from "./ProjectCard";
+import Contact from "./Contact.jsx";
 
 export default function Home() {
 	return (
@@ -62,9 +63,25 @@ export default function Home() {
 				<Skills logo={"/public/skillsLogo/threejs.png"} />
 			</SkillBar>
 			<div className="projectsContainer">
-				<ProjectCard />
-				<ProjectCard />
+				<div className="projectTitle">
+					<p>
+						Projects
+					</p>
+				</div>
+
+				<ProjectCard techno={["react js", "react three fiber"]}>
+					This portfolio source code on Github
+				</ProjectCard>
+				<ProjectCard techno={["node js", "express js", "psql"]}>
+					3d model sharing social network API -- wip
+
+				</ProjectCard>
+				<div className="moreContainer">
+				<p className="more">... and many more to come</p>
+				</div>
 			</div>
+
+			<Contact/>
 		</>
 	);
 }
