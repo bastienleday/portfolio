@@ -5,7 +5,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: #030303;
+	background-color: #08070c;
 
 
 
@@ -17,7 +17,7 @@
 
 	height: 100%;
 	/*padding: 2rem 2rem 2rem 8rem;*/
-	background-image: url("/src/divers/pictures/fond bas.jpg");
+	background-image: url("/src/divers/pictures/fondBas.jpg");
 	background-size: cover;
 }
 .projectTitle{
