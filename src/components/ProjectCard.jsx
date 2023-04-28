@@ -32,11 +32,7 @@ export default function ProjectCard({children, techno }) {
 							start: "top 80%",
 							end:  "bottom 20%",
 							toggleActions: "restart none none reverse",
-							markers:{
-								startColor: "red",
-								endColor: "red",
-								fontSize: "20px",
-							}
+
 
 
 
