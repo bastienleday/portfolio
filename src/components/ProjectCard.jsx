@@ -32,11 +32,6 @@ export default function ProjectCard({ children, techno }) {
 							end: "bottom 20%",
 
 							toggleActions: "restart none none reverse",
-							markers: {
-								startColor: "red",
-								endColor: "red",
-								fontSize: "20px",
-							},
 						},
 					});
 					observer.unobserve(entry.target); // Arrêter d'observer une fois que l'animation est déclenchée
