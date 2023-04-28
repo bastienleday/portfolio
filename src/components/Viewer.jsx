@@ -7,7 +7,7 @@ import { Bloom, Glitch, EffectComposer} from "@react-three/postprocessing";
 
 export default function Viewer() {
 
-    const model = useLoader(GLTFLoader, 'src/divers/3d/keyboard2.glb')
+    const model = useLoader(GLTFLoader, '/keyboard2.glb')
 
     const cubeRef = useRef()
 
