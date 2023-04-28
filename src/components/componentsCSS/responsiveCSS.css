@@ -1,134 +1,103 @@
-@media screen and (max-width: 1800px) {
- .canvasContainer{
-     right: -15rem;
-     top: -4rem;
-
- }
-    .projectCard{
-        font-size: 1.5rem !important;
-        line-height: 1.5rem !important;
-        margin-left: 4rem !important;
-
-
-
-    }
-
+@media screen and (max-width: 1950px) {
+	* {
+	}
+	.canvasContainer {
+		right: -15rem;
+		top: -4rem;
+	}
+	.projectCard {
+		font-size: 1.5rem !important;
+		line-height: 1.5rem !important;
+		margin-left: -30rem !important;
+		opacity: 0;
+	}
 }
 
 @media screen and (max-width: 700px) {
-    *{
+	* {
+	}
+	.welcome {
+		font-size: 0.5rem;
+		width: 80%;
+		height: 2rem;
+	}
+	.subtitle {
+		justify-content: flex-start;
+		align-items: start;
+		padding-left: 1rem;
+	}
+	.title {
+		font-size: 2rem;
+		line-height: 3rem;
+	}
+	.presentation {
+		font-size: 0.9rem;
+		width: 100%;
+	}
+	.canvasContainer {
+		width: 40%;
+		margin-top: 0;
+	}
+	.homeContent {
+		width: 90%;
+		margin-top: 10rem;
+		margin-left: 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: start;
+	}
+	.navBar {
+		justify-content: flex-start;
+	}
+	.gros {
+		display: flex;
+		justify-content: center;
+	}
+	.nextContainer {
+		margin: auto;
+	}
+	.nextImg {
+		width: 2rem;
+		height: 2rem;
+	}
+	.skillContent {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.skillsLogo {
+		width: 20% !important;
+	}
 
+	.projectCard {
+		font-size: 1rem !important;
+		line-height: 1rem !important;
+		margin-left: 2rem !important;
+	}
+	.submit {
+		width: 80% !important;
+	}
+	.projectTitle {
+		margin-top: 2rem;
+	}
+	textarea {
+		width: 90% !important;
+		border-radius: 1rem;
+		background-color: #b0acb7;
+	}
 
+	.buttonCircularLink {
+		margin: 1rem;
+	}
+	.contactMe {
+		margin-bottom: 0.5rem;
+		color: white;
+	}
+	input {
+		height: 1.5rem !important;
+		background-color: #b0acb7;
+	}
 
-    }
-    .welcome{
-        font-size: 0.5rem;
-        width: 80%;
-        height: 2rem;
-
-
-    }
-    .subtitle{
-        justify-content: flex-start;
-        align-items: start;
-        padding-left: 1rem;
-    }
-    .title {
-        font-size: 2rem;
-        line-height: 3rem;
-    }
-    .presentation{
-        font-size: 0.9rem;
-        width: 100%;
-    }
-    .canvasContainer{
-        width: 40%;
-        margin-top: 0;
-
-
-
-
-
-    }
-    .homeContent{
-        width: 90%;
-        margin-top: 10rem;
-        margin-left: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: start;
-    }
-    .navBar {
-        justify-content: flex-start;
-    }
-    .gros{
-        display: flex;
-        justify-content: center;
-
-
-
-    }
-    .nextContainer{
-        margin: auto;
-
-    }
-    .nextImg{
-        width: 2rem;
-        height: 2rem;
-    }
-    .skillContent{
-        display: flex;
-        flex-wrap: wrap;
-
-
-
-
-    }
-    .skillsLogo{
-        width: 20% !important;
-
-
-    }
-
-    .projectCard{
-        font-size: 1rem !important;
-        line-height: 1rem !important;
-        margin-left: 2rem !important;
-
-
-    }
-    .submit{
-        width: 80% !important;
-    }
-    .projectTitle{
-        margin-top: 2rem;
-    }
-    textarea{
-        width: 90% !important;
-        border-radius: 1rem;
-        background-color: #b0acb7;
-    }
-
-    .buttonCircularLink{
-        margin: 1rem;
-
-    }
-    .contactMe{
-        margin-bottom: 0.5rem;
-        color: white;
-    }
-    input{
-        height: 1.5rem !important;
-        background-color: #b0acb7;
-
-    }
-
-    .form{
-        width: 80% !important;
-    }
-
-
+	.form {
+		width: 80% !important;
+	}
 }
-
-
-
