@@ -94,7 +94,7 @@ export default function Home() {
 
 				</ProjectCard> </a>
 				<div className="moreContainer">
-				<p className="more">... and many more to come</p>
+				<p className="more">... et bien d'autres à venir</p>
 				</div>
 			</div>
 
