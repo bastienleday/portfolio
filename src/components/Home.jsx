@@ -89,7 +89,7 @@ export default function Home() {
 				<ProjectCard techno={["react js", "react three fiber"]}>
 					Code source de ce portfolio sur github
 				</ProjectCard></a>
-				<a href={"https://github.com/bastienleday/portfolio"} target="blank"><ProjectCard techno={["node js", "express js", "psql"]}>
+				<a href={"https://github.com/bastienleday/3D-model-API/tree/main/BACK"} target="blank"><ProjectCard techno={["node js", "express js", "psql"]}>
 					API pour un réseau social de partage de modèles 3D -- WIP
 
 				</ProjectCard> </a>
