@@ -23,7 +23,7 @@ export default function Home() {
 					<div className="homeContent">
 						<Welcome />
 						<h1 className="title">
-							Bastien Leday, <br /> Front End Developer
+							Bastien Leday, <br /> Web Developer
 						</h1>
 						<p className="presentation">
 							En tant que développeur, je suis passionné par la création d'expériences web et par la 3D
