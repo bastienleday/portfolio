@@ -1,4 +1,4 @@
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1800px) {
  .canvasContainer{
      right: -15rem;
      top: -4rem;
@@ -8,6 +8,7 @@
         font-size: 1.5rem !important;
         line-height: 1.5rem !important;
         margin-left: 4rem !important;
+
 
 
     }

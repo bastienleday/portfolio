@@ -10,6 +10,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function ProjectCard({children, techno }) {
 	const isMobile = useMediaQuery("(max-width: 1000px)");
+	const isLaptop = useMediaQuery("(max-width: 1800px)");
+
 
 	const main = useRef(null);
 	useEffect(() => {
@@ -22,7 +24,7 @@ export default function ProjectCard({children, techno }) {
 				if (entry.isIntersecting) {
 					// Vérifier si l'élément est visible dans le viewport
 					gsap.to(entry.target, {
-						x: isMobile ? 0 : 700,
+						x: isMobile ? 0 : isLaptop ? 0 : 900,
 						duration: 1,
 						delay: 0.2,
 						scrollTrigger: {
@@ -30,6 +32,11 @@ export default function ProjectCard({children, techno }) {
 							start: "top 80%",
 							end:  "bottom 20%",
 							toggleActions: "restart none none reverse",
+							markers:{
+								startColor: "red",
+								endColor: "red",
+								fontSize: "20px",
+							}
 
 
 
