@@ -11,10 +11,10 @@ export default function NavBar() {
                     in
                 </CircularLink>
                 <CircularLink link={'https://github.com/bastienleday'}>
-                    <img src={'src/divers/pictures/git.png'} alt={""} className="gitLogo"></img>
+                    <img src={'/pictures/git.png'} alt={""} className="gitLogo"></img>
                 </CircularLink>
                 <CircularLink link={'https://www.instagram.com/'}>
-                    <img src={'src/divers/pictures/instagram.png'} className="instagramLogo" alt={""}>
+                    <img src={'/pictures/instagram.png'} className="instagramLogo" alt={""}>
                     </img>
                 </CircularLink>
 

@@ -49,20 +49,20 @@ export default function Home() {
 			</div>
 			<SkillBar>
 
-				<Skills logo={"src/divers/skillsLogo/nodejs.png"} />
-				<Skills logo={"src/divers/skillsLogo/ps.png"} />
-				<Skills logo={"src/divers/skillsLogo/psql.png"} />
-				<Skills logo={"src/divers/skillsLogo/react.png"} />
-				<Skills logo={"src/divers/skillsLogo/substance.png"} />
-				<Skills logo={"src/divers/skillsLogo/threejs.png"} />
-				<Skills logo={"src/divers/skillsLogo/blender.png"} />
-				<Skills logo={"src/divers/skillsLogo/js.png"} />
-				<Skills logo={"src/divers/skillsLogo/nodejs.png"} />
-				<Skills logo={"src/divers/skillsLogo/ps.png"} />
-				<Skills logo={"src/divers/skillsLogo/psql.png"} />
-				<Skills logo={"src/divers/skillsLogo/react.png"} />
-				<Skills logo={"src/divers/skillsLogo/substance.png"} />
-				<Skills logo={"src/divers/skillsLogo/threejs.png"} />
+				<Skills logo={"/skillsLogo/nodejs.png"} />
+				<Skills logo={"/skillsLogo/ps.png"} />
+				<Skills logo={"/skillsLogo/psql.png"} />
+				<Skills logo={"/skillsLogo/react.png"} />
+				<Skills logo={"/skillsLogo/substance.png"} />
+				<Skills logo={"/skillsLogo/threejs.png"} />
+				<Skills logo={"/skillsLogo/blender.png"} />
+				<Skills logo={"/skillsLogo/js.png"} />
+				<Skills logo={"/skillsLogo/nodejs.png"} />
+				<Skills logo={"/skillsLogo/ps.png"} />
+				<Skills logo={"/skillsLogo/psql.png"} />
+				<Skills logo={"/skillsLogo/react.png"} />
+				<Skills logo={"/skillsLogo/substance.png"} />
+				<Skills logo={"/skillsLogo/threejs.png"} />
 			</SkillBar>
 			<div className="projectsContainer">
 				<div className="projectTitle">

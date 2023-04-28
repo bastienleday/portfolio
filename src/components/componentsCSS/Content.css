@@ -17,7 +17,7 @@
 
 	height: 100%;
 	/*padding: 2rem 2rem 2rem 8rem;*/
-	background-image: url("/src/divers/pictures/fondBas.jpg");
+	background-image: url("/public/pictures/fondBas.jpg");
 	background-size: cover;
 }
 .projectTitle{
