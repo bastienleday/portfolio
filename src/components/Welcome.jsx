@@ -5,7 +5,7 @@ export default function Welcome() {
     return (
         <div className="welcome">
             <h3 className="subtitle">
-                Welcome to my portfolio
+                Bienvenue sur mon portfolio
             </h3>
         </div>
     )
