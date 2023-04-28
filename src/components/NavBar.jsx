@@ -8,7 +8,7 @@ export default function NavBar() {
 
             <div className="circularLinkContainer">
                 <CircularLink link={'https://www.linkedin.com/in/bastien-leday/'} >
-                    in
+                    <img src={'/pictures/lin.png'} alt={""} className="gitLogo"></img>
                 </CircularLink>
                 <CircularLink link={'https://github.com/bastienleday'}>
                     <img src={'/pictures/git.png'} alt={""} className="gitLogo"></img>

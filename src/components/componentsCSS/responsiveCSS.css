@@ -76,13 +76,15 @@
         height: 2rem;
     }
     .skillContent{
+        display: flex;
+        flex-wrap: wrap;
 
 
 
 
     }
     .skillsLogo{
-        width: 8% !important;
+        width: 20% !important;
 
 
     }

@@ -38,7 +38,7 @@ export default function Contact() {
         return (
             <div id="contactDiv" className="contact">
                 <div className="contactTitle">
-                <p className="contactMe">Contact me</p>
+                <p className="contactMe">Me contacter</p>
                 </div>
             <form className="form" onSubmit={handleSubmit} id="contactForm" ref={form}>
                 <label>

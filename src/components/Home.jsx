@@ -85,14 +85,14 @@ export default function Home() {
 						Projects
 					</p>
 				</div>
-
+				<a href={"https://github.com/bastienleday/portfolio"} target="blank">
 				<ProjectCard techno={["react js", "react three fiber"]}>
-					This portfolio source code on Github
-				</ProjectCard>
-				<ProjectCard techno={["node js", "express js", "psql"]}>
-					3d model sharing social network API -- wip
+					Code source de ce portfolio sur github
+				</ProjectCard></a>
+				<a href={"https://github.com/bastienleday/portfolio"} target="blank"><ProjectCard techno={["node js", "express js", "psql"]}>
+					API pour un réseau social de partage de modèles 3D -- WIP
 
-				</ProjectCard>
+				</ProjectCard> </a>
 				<div className="moreContainer">
 				<p className="more">... and many more to come</p>
 				</div>
