@@ -13,8 +13,28 @@ import SkillBar from "./SkillBar.jsx";
 import ProjectCard from "./ProjectCard";
 import Contact from "./Contact.jsx";
 import Footer from "./Footer.jsx";
+import { useMediaQuery} from "@mui/material";
 
 export default function Home() {
+	const isMobile = useMediaQuery("(max-width: 1000px)");
+	const skillsLogo = [
+		"/skillsLogo/nodejs.png",
+		"/skillsLogo/ps.png",
+		"/skillsLogo/psql.png",
+		"/skillsLogo/react.png",
+		"/skillsLogo/substance.png",
+		"/skillsLogo/threejs.png",
+		"/skillsLogo/blender.png",
+		"/skillsLogo/js.png",
+		"/skillsLogo/nodejs.png",
+		"/skillsLogo/ps.png",
+		"/skillsLogo/psql.png",
+		"/skillsLogo/react.png",
+		"/skillsLogo/substance.png",
+		"/skillsLogo/threejs.png",
+
+	]
+
 	return (
 		<>
 			<div className="home">
@@ -23,12 +43,12 @@ export default function Home() {
 					<div className="homeContent">
 						<Welcome />
 						<h1 className="title">
-							Bastien Leday, <br /> Web Developer
+							Bastien Leday, <br /> Developpeur Web
 						</h1>
 						<p className="presentation">
 							En tant que développeur, je suis passionné par la création d'expériences web et par la 3D
 							que je prend plaisir à intégrer à ces expériences.
-							J'utilise des outils tels que Three.js, blender et substance painter qui conjugués enssembles
+							J'utilise des outils tels que Three.js, blender et substance painter qui conjugués ensembles
 							donnent vie à des applications web uniques et originales.
 							J'aime créer des interfaces interactives et immersives pour les utilisateurs,
 							et je suis toujours à la recherche de nouvelles façons d'améliorer mes compétences de développement.
@@ -48,21 +68,16 @@ export default function Home() {
 				</div>
 			</div>
 			<SkillBar>
+				{isMobile ?
+					skillsLogo.slice(0, 8).map((logo, index) => (
+						<Skills key={index} logo={logo} />
+					)) :
+					skillsLogo.map((logo, index) => (
+						<Skills key={index} logo={logo} />
+					))
+				}
 
-				<Skills logo={"/skillsLogo/nodejs.png"} />
-				<Skills logo={"/skillsLogo/ps.png"} />
-				<Skills logo={"/skillsLogo/psql.png"} />
-				<Skills logo={"/skillsLogo/react.png"} />
-				<Skills logo={"/skillsLogo/substance.png"} />
-				<Skills logo={"/skillsLogo/threejs.png"} />
-				<Skills logo={"/skillsLogo/blender.png"} />
-				<Skills logo={"/skillsLogo/js.png"} />
-				<Skills logo={"/skillsLogo/nodejs.png"} />
-				<Skills logo={"/skillsLogo/ps.png"} />
-				<Skills logo={"/skillsLogo/psql.png"} />
-				<Skills logo={"/skillsLogo/react.png"} />
-				<Skills logo={"/skillsLogo/substance.png"} />
-				<Skills logo={"/skillsLogo/threejs.png"} />
+
 			</SkillBar>
 			<div className="projectsContainer">
 				<div className="projectTitle">

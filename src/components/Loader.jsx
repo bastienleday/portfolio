@@ -7,10 +7,10 @@ import { Canvas} from "@react-three/fiber";
 export default function Loader() {
     return (
         <div className="loader">
-<p className="loaderBack">
+<div className="loaderBack">
     Initialization
             <h1 className="glitch" data-text="glitch"> Initialization </h1>
-</p>
+</div>
 
 
             <div className="loaderCanvasContainer">
