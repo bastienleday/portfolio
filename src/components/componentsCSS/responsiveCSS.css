@@ -1,6 +1,105 @@
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1500px) {
  .canvasContainer{
-     display: none;
+     right: -15rem;
+     top: -4rem;
+
  }
-    .
+
 }
+
+@media screen and (max-width: 500px) {
+    *{
+
+
+    }
+    .welcome{
+        font-size: 0.5rem;
+        width: 80%;
+        height: 2rem;
+
+
+    }
+    .subtitle{
+        justify-content: flex-start;
+        align-items: start;
+        padding-left: 1rem;
+    }
+    .title {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .presentation{
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    .canvasContainer{
+        width: 40%;
+        margin-top: 0;
+
+
+
+
+    }
+    .homeContent{
+        width: 90%;
+        margin-top: 10rem;
+        margin-left: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+    .navBar {
+        justify-content: flex-start;
+    }
+    .gros{
+        display: flex;
+        justify-content: center;
+
+
+
+    }
+    .nextContainer{
+        margin: auto;
+
+    }
+    .nextImg{
+        width: 2rem;
+        height: 2rem;
+    }
+    .skillContent{
+        flex-wrap: wrap !important;
+        flex-direction: column !important;
+        padding: 2rem;
+    }
+    .skillsLogo{
+        width: 17% !important;
+
+    }
+
+    .projectCard{
+        font-size: 1rem !important;
+        line-height: 1rem !important;
+        margin-left: 2rem !important;
+
+
+    }
+    .submit{
+        width: 80% !important;
+    }
+    .projectTitle{
+        margin-top: 2rem;
+    }
+    textarea{
+        width: 90% !important;
+    }
+
+    .buttonCircularLink{
+        margin: 1rem;
+
+    }
+
+
+}
+
+
+

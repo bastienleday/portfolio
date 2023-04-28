@@ -2,6 +2,7 @@ import react, { useEffect, useRef, useState } from "react";
 import Skills from "./Skills.jsx";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { gsap } from "gsap";
+import responsiveCSS from "./componentsCSS/responsiveCSS.css";
 
 // Register ScrollTrigger with gsap
 gsap.registerPlugin(ScrollTrigger);

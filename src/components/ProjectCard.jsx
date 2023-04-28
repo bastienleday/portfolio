@@ -2,12 +2,14 @@ import React from "react";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useMediaQuery} from "@mui/material";
 
 // Register ScrollTrigger with gsap
 gsap.registerPlugin(ScrollTrigger);
 
 
 export default function ProjectCard({children, techno }) {
+	const isMobile = useMediaQuery("(max-width: 500px)");
 
 	const main = useRef(null);
 	useEffect(() => {
@@ -20,13 +22,13 @@ export default function ProjectCard({children, techno }) {
 				if (entry.isIntersecting) {
 					// Vérifier si l'élément est visible dans le viewport
 					gsap.to(entry.target, {
-						x: 700,
+						x: isMobile ? 0 : 700,
 						duration: 1,
 						delay: 0.2,
 						scrollTrigger: {
 							trigger: ".skillContainer",
-							start: "top 60%",
-							end: "bottom 30%",
+							start: "top 80%",
+							end: "bottom 20%",
 							toggleActions: "restart none none reverse",
 
 
