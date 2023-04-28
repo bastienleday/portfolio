@@ -10,6 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function ProjectCard({ children, techno }) {
 	const isMobile = useMediaQuery("(max-width: 1000px)");
 	const isLaptop = useMediaQuery("(max-width: 1950px)");
+	const isSmallLaptop = useMediaQuery("(max-width: 1300px)");
 
 	const main = useRef(null);
 	useEffect(() => {
@@ -29,7 +30,6 @@ export default function ProjectCard({ children, techno }) {
 						scrollTrigger: {
 							trigger: ".skillContainer",
 							start: "top 80%",
-							end: "bottom 20%",
 
 							toggleActions: "restart none none reverse",
 						},
