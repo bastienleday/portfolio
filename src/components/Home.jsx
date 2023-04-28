@@ -26,14 +26,15 @@ export default function Home() {
 							Bastien Leday, <br /> Front End Developer
 						</h1>
 						<p className="presentation">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-							rhoncus pharetra ex laoreet cursus. Maecenas vitae orci et dui
-							faucibus molestie. Sed ipsum magna, dignissim ut enim sit amet,
-							hendrerit porttitor enim. Nunc sed ultrices magna, sed sagittis
-							dui. Integer tincidunt finibus enim imperdiet accumsan. Sed
-							aliquet aliquet leo, a lacinia est dignissim in. Aliquam
-							sollicitudin viverra enim a dapibus. Aliquam elit ante, vulputate
-							a sollicitudin eu, mattis non nunc.
+							En tant que développeur, je suis passionné par la création d'expériences web et par la 3D
+							que je prend plaisir à intégrer à ces expériences.
+							J'utilise des outils tels que Three.js, blender et substance painter qui conjugués enssembles
+							donnent vie à des applications web uniques et originales.
+							J'aime créer des interfaces interactives et immersives pour les utilisateurs,
+							et je suis toujours à la recherche de nouvelles façons d'améliorer mes compétences de développement.
+							Mon approche est axée sur la créativité et j'aime explorer de nouvelles idées, de nouveaux
+							languages et concepts  pour offrir une expérience unique et engageante pour les utilisateurs de mes applications web.
+
 						</p>
 					</div>
 					<div className="canvasContainer">

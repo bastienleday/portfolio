@@ -4,10 +4,17 @@
      top: -4rem;
 
  }
+    .projectCard{
+        font-size: 1.5rem !important;
+        line-height: 1.5rem !important;
+        margin-left: 4rem !important;
+
+
+    }
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     *{
 
 
@@ -91,11 +98,26 @@
     }
     textarea{
         width: 90% !important;
+        border-radius: 1rem;
+        background-color: #b0acb7;
     }
 
     .buttonCircularLink{
         margin: 1rem;
 
+    }
+    .contactMe{
+        margin-bottom: 0.5rem;
+        color: white;
+    }
+    input{
+        height: 1.5rem !important;
+        background-color: #b0acb7;
+
+    }
+
+    .form{
+        width: 80% !important;
     }
 
 
