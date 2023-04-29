@@ -20,8 +20,8 @@ import Audio from "./Audio.jsx";
 
 export default function Home() {
 
-	const [background, setBackground] = useState("/public/pictures/fondHaut.jpg");
-	const[backgroundBottom, setBackgroundBottom] = useState("/public/pictures/fondBas.jpg")
+	const [background, setBackground] = useState("/pictures/fondHaut.jpg");
+	const[backgroundBottom, setBackgroundBottom] = useState("/pictures/fondBas.jpg")
 
 	const backgroundChange = (newBackground, newBackGroundBottom) => {
 		setBackground(newBackground)

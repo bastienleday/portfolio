@@ -33,12 +33,12 @@ export default function Viewer({backgroundChange}) {
             setColor('rgb(71, 235, 21)')
             setLightColor('rgb(160, 194, 151)')
             setIntensity(1)
-            backgroundChange("/public/pictures/fondHautVert.jpg", "/public/pictures/fondBasVert.jpg")
+            backgroundChange("/public/pictures/fondHautVert.jpg", "/pictures/fondBasVert.jpg")
         } else {
             setColor('rgb(81, 204, 232)')
             setLightColor('rgb(50, 50, 92)')
             setIntensity(15)
-            backgroundChange("/public/pictures/fondHaut.jpg", "/public/pictures/fondBas.jpg")
+            backgroundChange("/public/pictures/fondHaut.jpg", "/pictures/fondBas.jpg")
         }
 
 
