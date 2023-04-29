@@ -1,4 +1,4 @@
-import {useEffect, useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 import { useFrame, useLoader} from '@react-three/fiber'
 import { GLTFLoader} from "three/addons/loaders/GLTFLoader.js";
 
@@ -14,12 +14,19 @@ export default function Viewer() {
 
     const cubeRef = useRef()
 
+    const[color, setColor] = useState('rgb(50, 50, 92)')
+
 
     useFrame(() => {
         cubeRef.current.rotation.y += 0.01
         cubeRef.current.rotation.x += 0.01
 
     })
+
+    const onClick = (e) => {
+        console.log(e.target)
+        setColor('rgb(255, 255, 255)')
+    }
 
 
 
@@ -40,11 +47,11 @@ export default function Viewer() {
 
     <mesh>
         <sphereBufferGeometry args={[0.6]}/>
-        <meshStandardMaterial color={'rgb(81, 204, 232)'} emissive={'rgb(81, 204, 232)'} toneMapped={false} emissiveIntensity={1.5} />
+        <meshStandardMaterial color={'rgb(81, 204, 232)'} emissive={color} toneMapped={false} emissiveIntensity={1.5} />
     </mesh>
 
 
-                < primitive object={model.scene} position={[0, 0, 0]} scale={0.5} ref={cubeRef}/>
+                < primitive object={model.scene} position={[0, 0, 0]} scale={0.5} ref={cubeRef} onCLick={onClick}/>
 
 
 </>

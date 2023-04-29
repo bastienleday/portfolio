@@ -196,15 +196,19 @@
 
 
 audio::-webkit-media-controls {
-	display: none;
 
+
+
+}
+audio{
+	display: none;
 }
 
 
 .playAudio{
 	color: white;
 	background-color: #b0acb7;
-	top: 10rem;
+	top: 7rem;
 	left: 1rem;
 	width: 2rem;
 	height: 2rem;
