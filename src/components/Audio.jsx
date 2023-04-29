@@ -17,6 +17,7 @@ export default function Audio() {
        const handleClick = () => {
              if(audio.current.paused){
                  audio.current.play()
+                 audio.current.volume = 0.2
 
 
 
@@ -34,7 +35,7 @@ export default function Audio() {
         return (
             <>
 
-                <audio src="/sound/suspens.mp3" controls loop ref={audio} autoPlay></audio>
+                <audio src="/sound/suspens.mp3" controls loop ref={audio}  ></audio>
                 <button className="playAudio" onClick={handleClick} ref={audioButton}>
                     <img src={"/sound/pause.png"} alt="play" className="audioLogo" />
                 </button>
