@@ -1,9 +1,11 @@
 import CircularLink from "./CircularLink.jsx";
+import Audio from "./Audio.jsx";
 
 export default function NavBar() {
 	return (
 		<nav className="navBar">
 			<div className="circularLinkContainer">
+
 				<CircularLink link={"https://www.linkedin.com/in/bastien-leday/"}>
 					<img src={"/pictures/lin.png"} alt={""} className="gitLogo"></img>
 				</CircularLink>

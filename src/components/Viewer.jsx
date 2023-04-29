@@ -1,11 +1,14 @@
-import {useRef} from "react";
+import {useEffect, useRef} from "react";
 import { useFrame, useLoader} from '@react-three/fiber'
 import { GLTFLoader} from "three/addons/loaders/GLTFLoader.js";
 
 import { Bloom, Glitch, EffectComposer} from "@react-three/postprocessing";
+import ReactAudioPlayer from 'react-audio-player';
+
 
 
 export default function Viewer() {
+
 
     const model = useLoader(GLTFLoader, '/keyboard2.glb')
 

@@ -24,12 +24,13 @@ export default function ProjectCard({ children, techno }) {
 					// Vérifier si l'élément est visible dans le viewport
 					gsap.to(entry.target, {
 						opacity: 1,
-						x: isMobile ? 0 : isLaptop ? 600 : 900,
+					/*x: isMobile ? 0 : isLaptop ? 0 : 900,*/
 						duration: 1,
 						delay: 0.2,
 						scrollTrigger: {
 							trigger: ".skillContainer",
 							start: "top 80%",
+							bottom: "bottom 20%",
 
 							toggleActions: "restart none none reverse",
 						},

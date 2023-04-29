@@ -193,3 +193,55 @@
 	}
 }
 
+
+
+audio::-webkit-media-controls {
+	display: none;
+
+}
+
+
+.playAudio{
+	color: white;
+	background-color: #b0acb7;
+	top: 10rem;
+	left: 1rem;
+	width: 2rem;
+	height: 2rem;
+	text-decoration: none;
+	margin-top: 0;
+	opacity: 0.3;
+
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	border: #1d1a2a solid 1px;
+	transition: all 0.1s ease-in-out;
+	z-index: 2;
+	position: fixed;
+}
+.playAudio:hover{
+	animation: circle 0.1s ease-in;
+	border:  2px solid #3d9dea;
+	box-shadow: 1px 2px 27px 2px #24CEFF;
+}
+@keyframes circle {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.audioLogo{
+	width: 100%;
+
+}
+
+

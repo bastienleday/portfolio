@@ -14,8 +14,13 @@ import ProjectCard from "./ProjectCard";
 import Contact from "./Contact.jsx";
 import Footer from "./Footer.jsx";
 import { useMediaQuery} from "@mui/material";
+import ReactAudioPlayer from "react-audio-player";
+import Audio from "./Audio.jsx";
+
 
 export default function Home() {
+
+
 	const isMobile = useMediaQuery("(max-width: 1000px)");
 	const skillsLogo = [
 		"/skillsLogo/nodejs.png",
@@ -38,6 +43,11 @@ export default function Home() {
 	return (
 		<>
 			<div className="home">
+				<Audio />
+
+
+
+
 				<NavBar />
 				<div className="gros">
 					<div className="homeContent">
@@ -47,7 +57,7 @@ export default function Home() {
 						</h1>
 						<p className="presentation">
 							En tant que développeur, je suis passionné par la création d'expériences web et par la 3D
-							que je prend plaisir à intégrer à ces expériences.
+							que je prends plaisir à intégrer à ces expériences.
 							J'utilise des outils tels que Three.js, blender et substance painter qui conjugués ensembles
 							donnent vie à des applications web uniques et originales.
 							J'aime créer des interfaces interactives et immersives pour les utilisateurs,
