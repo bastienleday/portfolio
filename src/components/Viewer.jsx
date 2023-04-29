@@ -7,14 +7,18 @@ import ReactAudioPlayer from 'react-audio-player';
 
 
 
-export default function Viewer() {
+export default function Viewer({backgroundChange}) {
+    console.log(backgroundChange)
 
 
     const model = useLoader(GLTFLoader, '/keyboard2.glb')
 
     const cubeRef = useRef()
 
-    const[color, setColor] = useState('rgb(50, 50, 92)')
+
+    const[color, setColor] = useState('rgb(81, 204, 232)')
+    const [lightColor, setLightColor] = useState('rgb(50, 50, 92)')
+    const [intensity, setIntensity] = useState(15)
 
 
     useFrame(() => {
@@ -25,7 +29,19 @@ export default function Viewer() {
 
     const onClick = (e) => {
         console.log(e.target)
-        setColor('rgb(255, 255, 255)')
+        if (color === 'rgb(81, 204, 232)' && lightColor === 'rgb(50, 50, 92)' && intensity === 15) {
+            setColor('rgb(71, 235, 21)')
+            setLightColor('rgb(160, 194, 151)')
+            setIntensity(1)
+            backgroundChange("/public/pictures/fondHautVert.jpg", "/public/pictures/fondBasVert.jpg")
+        } else {
+            setColor('rgb(81, 204, 232)')
+            setLightColor('rgb(50, 50, 92)')
+            setIntensity(15)
+            backgroundChange("/public/pictures/fondHaut.jpg", "/public/pictures/fondBas.jpg")
+        }
+
+
     }
 
 
@@ -43,15 +59,15 @@ export default function Viewer() {
 
     </EffectComposer>
 
-                <directionalLight  position={[-3, 4, 1]} color={'rgb(50, 50, 92)'} intensity={15}/>
+                <directionalLight  position={[-3, 4, 1]} color={lightColor} intensity={intensity}/>
 
-    <mesh>
+    <mesh onClick={onClick}>
         <sphereBufferGeometry args={[0.6]}/>
         <meshStandardMaterial color={'rgb(81, 204, 232)'} emissive={color} toneMapped={false} emissiveIntensity={1.5} />
     </mesh>
 
 
-                < primitive object={model.scene} position={[0, 0, 0]} scale={0.5} ref={cubeRef} onCLick={onClick}/>
+                < primitive object={model.scene} position={[0, 0, 0]} scale={0.5} ref={cubeRef} />
 
 
 </>

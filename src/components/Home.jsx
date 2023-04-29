@@ -1,4 +1,4 @@
-import react, { useEffect } from "react";
+import react, { useEffect, useState } from "react";
 import "./componentsCSS/Home.css";
 import Welcome from "./Welcome.jsx";
 import NavBar from "./NavBar.jsx";
@@ -19,6 +19,14 @@ import Audio from "./Audio.jsx";
 
 
 export default function Home() {
+
+	const [background, setBackground] = useState("/public/pictures/fondHaut.jpg");
+	const[backgroundBottom, setBackgroundBottom] = useState("/public/pictures/fondBas.jpg")
+
+	const backgroundChange = (newBackground, newBackGroundBottom) => {
+		setBackground(newBackground)
+		setBackgroundBottom(newBackGroundBottom)
+	}
 
 
 	const isMobile = useMediaQuery("(max-width: 1000px)");
@@ -42,7 +50,7 @@ export default function Home() {
 
 	return (
 		<>
-			<div className="home">
+			<div className="home" style={{backgroundImage :`url(${background})` }} >
 				<Audio />
 
 
@@ -69,7 +77,7 @@ export default function Home() {
 					</div>
 					<div className="canvasContainer">
 						<Canvas className="canvas">
-							<Viewer />
+							<Viewer backgroundChange={backgroundChange}/>
 						</Canvas>
 					</div>
 				</div>
@@ -89,7 +97,7 @@ export default function Home() {
 
 
 			</SkillBar>
-			<div className="projectsContainer">
+			<div className="projectsContainer" style={{backgroundImage :`url(${backgroundBottom})` }}>
 				<div className="projectTitle">
 					<p>
 						Projects
