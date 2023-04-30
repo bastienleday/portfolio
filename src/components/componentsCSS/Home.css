@@ -2,8 +2,6 @@
 	min-height: 100vh;
 	min-width: 100%;
 
-
-
 	background-size: cover;
 
 	background-repeat: no-repeat;
@@ -26,10 +24,7 @@
 	margin-right: 15rem;
 	position: fixed;
 	right: 0;
-
 }
-
-
 
 .gros {
 	display: flex;
@@ -108,10 +103,9 @@
 	font-weight: lighter;
 	transition: all 0.1s ease-in-out;
 	cursor: pointer;
-
 }
 
-.buttonLink:hover{
+.buttonLink:hover {
 	transform: scale(1.1);
 }
 .buttonCircularLink {
@@ -129,13 +123,11 @@
 	border-radius: 50%;
 	border: white solid 1px;
 	transition: all 0.1s ease-in-out;
-
-
 }
-.buttonCircularLink:hover{
+.buttonCircularLink:hover {
 	animation: circle 0.1s ease-in;
-	border:  2px solid #3d9dea;
-	box-shadow: 1px 2px 27px 2px #24CEFF;
+	border: 2px solid #3d9dea;
+	box-shadow: 1px 2px 27px 2px #24ceff /* #2bff24;*/;
 }
 @keyframes circle {
 	0% {
@@ -160,10 +152,9 @@
 	width: 70%;
 	height: 70%;
 }
-.gitLogo{
+.gitLogo {
 	width: 100%;
 	height: 100%;
-
 }
 
 .nextContainer {
@@ -193,19 +184,13 @@
 	}
 }
 
-
-
 audio::-webkit-media-controls {
-
-
-
 }
-audio{
+audio {
 	display: none;
 }
 
-
-.playAudio{
+.playAudio {
 	color: white;
 	background-color: #b0acb7;
 	top: 7rem;
@@ -216,7 +201,6 @@ audio{
 	margin-top: 0;
 	opacity: 0.3;
 
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -226,10 +210,10 @@ audio{
 	z-index: 2;
 	position: fixed;
 }
-.playAudio:hover{
+.playAudio:hover {
 	animation: circle 0.1s ease-in;
-	border:  2px solid #3d9dea;
-	box-shadow: 1px 2px 27px 2px #24CEFF;
+	border: 2px solid #3d9dea;
+	box-shadow: 1px 2px 27px 2px #24ceff;
 }
 @keyframes circle {
 	0% {
@@ -243,9 +227,6 @@ audio{
 	}
 }
 
-.audioLogo{
+.audioLogo {
 	width: 100%;
-
 }
-
-

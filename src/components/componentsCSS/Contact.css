@@ -44,6 +44,7 @@ textarea {
 	justify-content: center;
 	flex-direction: column;
 	border-top: 1px rgba(9, 14, 27, 1) solid;
+	border-bottom: 1px rgba(9, 14, 27, 1) solid;
 	height: 100%;
 }
 
@@ -82,7 +83,7 @@ textarea {
 
 .footer {
 	background-color: #08070c;
-	border-top: 1px rgba(9, 14, 27, 1) solid;
+
 	display: flex;
 	justify-content: flex-end;
 	padding: 1rem 2rem;

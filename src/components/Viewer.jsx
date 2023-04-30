@@ -42,7 +42,8 @@ export default function Viewer({
 				"rgba(7,12,8,255)", // skillBarColor theme vert
 				"rgba(7,12,8,255)", //contactColor theme vert
 				"rgb(9, 27, 13)", //formColor theme vert
-				"rgba(7,12,8,255)" //footerColor theme vert
+				"rgba(7,12,8,255)", //footerColor theme vert
+				" #2bff24"
 			);
 		} else {
 			setColor("rgb(81, 204, 232)");
@@ -54,7 +55,8 @@ export default function Viewer({
 				"rgb(8, 7, 12)", // skillBarColor theme bleu
 				"rgb(8, 7, 12)", //contactColor theme bleu
 				" rgba(9, 14, 27, 1)", //formColor theme bleu
-				"rgb(8, 7, 12)" //footerColor theme bleu
+				"rgb(8, 7, 12)", //footerColor theme bleu
+				"#24ceff"
 			);
 		}
 	};

@@ -29,6 +29,7 @@ export default function Home() {
 	//nouvelle couleur clair du theme vert rgb (9, 27, 13)
 	const [formColor, setFormColor] = useState("rgba(9, 14, 27, 1)");
 	const [footerColor, setFooterColor] = useState("rgb(8, 7, 12)");
+	const [CircularLinkColor, setCircularLinkColor] = useState("#24ceff");
 
 	const backgroundChange = (
 		newBackground,
@@ -36,7 +37,8 @@ export default function Home() {
 		skillBarNewColor,
 		contactNewColor,
 		formNewColor,
-		newFooterColor
+		newFooterColor,
+		newCircularLinkColor
 	) => {
 		setBackground(newBackground);
 		setBackgroundBottom(newBackGroundBottom);
@@ -44,6 +46,7 @@ export default function Home() {
 		setContactColor(contactNewColor);
 		setFormColor(formNewColor);
 		setFooterColor(newFooterColor);
+		setCircularLinkColor(newCircularLinkColor);
 	};
 
 	const isMobile = useMediaQuery("(max-width: 1000px)");
@@ -69,7 +72,7 @@ export default function Home() {
 			<div className="home" style={{ backgroundImage: `url(${background})` }}>
 				<Audio />
 
-				<NavBar />
+				<NavBar color={CircularLinkColor} />
 				<div className="gros">
 					<div className="homeContent">
 						<Welcome />

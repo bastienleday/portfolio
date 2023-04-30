@@ -38,7 +38,15 @@ export default function Contact({ color, color2 }) {
 	};
 
 	return (
-		<div id="contactDiv" className="contact" style={{ backgroundColor: color }}>
+		<div
+			id="contactDiv"
+			className="contact"
+			style={{
+				backgroundColor: color,
+				borderTop: `2px ${color2} solid`,
+				borderBottom: `2px ${color2} solid`,
+			}}
+		>
 			<div className="contactTitle">
 				<p className="contactMe">Me contacter</p>
 			</div>
