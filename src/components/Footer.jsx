@@ -1,10 +1,7 @@
-
-
-export default function Footer() {
-
-    return (
-        <div className="footer">
-            <p className="footerText"></p>
-        </div>
-    )
+export default function Footer({ color }) {
+	return (
+		<div className="footer" style={{ backgroundColor: color }}>
+			<p className="footerText"></p>
+		</div>
+	);
 }

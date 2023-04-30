@@ -37,22 +37,24 @@ export default function Viewer({
 			setLightColor("rgb(160, 194, 151)");
 			setIntensity(1);
 			backgroundChange(
-				"/pictures/fondHautVert.jpg",
-				"/pictures/fondBasVert.jpg",
-				"rgba(7,12,8,255)",
-				"rgba(7,12,8,255)",
-				"rgb(9, 27, 13)"
+				"/pictures/fondHautVert.jpg", //fond haut theme vert
+				"/pictures/fondBasVert.jpg", //fond bas theme vert
+				"rgba(7,12,8,255)", // skillBarColor theme vert
+				"rgba(7,12,8,255)", //contactColor theme vert
+				"rgb(9, 27, 13)", //formColor theme vert
+				"rgba(7,12,8,255)" //footerColor theme vert
 			);
 		} else {
 			setColor("rgb(81, 204, 232)");
 			setLightColor("rgb(50, 50, 92)");
 			setIntensity(15);
 			backgroundChange(
-				"/pictures/fondHaut.jpg",
-				"/pictures/fondBas.jpg",
-				"rgb(8, 7, 12)",
-				"rgb(8, 7, 12)",
-				" rgba(9, 14, 27, 1)"
+				"/pictures/fondHaut.jpg", //fond haut theme bleu
+				"/pictures/fondBas.jpg", //fond bas theme bleu
+				"rgb(8, 7, 12)", // skillBarColor theme bleu
+				"rgb(8, 7, 12)", //contactColor theme bleu
+				" rgba(9, 14, 27, 1)", //formColor theme bleu
+				"rgb(8, 7, 12)" //footerColor theme bleu
 			);
 		}
 	};
