@@ -7,7 +7,7 @@ import responsiveCSS from "./componentsCSS/responsiveCSS.css";
 // Register ScrollTrigger with gsap
 gsap.registerPlugin(ScrollTrigger);
 
-export default function SkillBar({ children }) {
+export default function SkillBar({ children, color }) {
 	const skillContainer = useRef(null);
 
 	useEffect(() => {
@@ -51,7 +51,7 @@ export default function SkillBar({ children }) {
 	}, []);
 
 	return (
-		<div className="skillContainer">
+		<div className="skillContainer" style={{backgroundColor : color}}>
 			<div className="skillContent" ref={skillContainer}>
 				{children}
 			</div>

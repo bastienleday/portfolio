@@ -4,7 +4,7 @@ import emailjs from '@emailjs/browser';
 import { useState, useRef } from "react";
 
 import "./componentsCSS/Contact.css";
-export default function Contact() {
+export default function Contact({color, color2}) {
 
     const form = useRef();
 
@@ -36,11 +36,14 @@ export default function Contact() {
 
 
         return (
-            <div id="contactDiv" className="contact">
+            <div id="contactDiv" className="contact" style={{backgroundColor : color}}>
                 <div className="contactTitle">
                 <p className="contactMe">Me contacter</p>
                 </div>
-            <form className="form" onSubmit={handleSubmit} id="contactForm" ref={form}>
+            <form className="form" onSubmit={handleSubmit} id="contactForm" ref={form}
+                  style={{background : `linear-gradient(-90deg, ${color2} 0%, ${color} 90%)`
+
+            }}>
                 <label>
                     Subject:
                     <input type="text" name="subject" value={formData.subject} onChange={handleChange} required={true} />

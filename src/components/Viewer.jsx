@@ -7,7 +7,7 @@ import ReactAudioPlayer from 'react-audio-player';
 
 
 
-export default function Viewer({backgroundChange}) {
+export default function Viewer({backgroundChange, violetThemeBas, violetThemeHaut, skillBarColor}) {
     console.log(backgroundChange)
 
 
@@ -33,12 +33,12 @@ export default function Viewer({backgroundChange}) {
             setColor('rgb(71, 235, 21)')
             setLightColor('rgb(160, 194, 151)')
             setIntensity(1)
-            backgroundChange("/pictures/fondHautVert.jpg", "/pictures/fondBasVert.jpg")
+            backgroundChange("/pictures/fondHautVert.jpg", "/pictures/fondBasVert.jpg", 'rgba(7,12,8,255)', 'rgba(7,12,8,255)', 'rgb(9, 27, 13)')
         } else {
             setColor('rgb(81, 204, 232)')
             setLightColor('rgb(50, 50, 92)')
             setIntensity(15)
-            backgroundChange("/pictures/fondHaut.jpg", "/pictures/fondBas.jpg")
+            backgroundChange("/pictures/fondHaut.jpg", "/pictures/fondBas.jpg", "rgb(8, 7, 12)", "rgb(8, 7, 12)")
         }
 
 

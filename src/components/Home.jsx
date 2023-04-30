@@ -22,10 +22,19 @@ export default function Home() {
 
 	const [background, setBackground] = useState("/pictures/fondHaut.jpg");
 	const[backgroundBottom, setBackgroundBottom] = useState("/pictures/fondBas.jpg")
+	//couleur de base foncé du theme violet
+	const [skillBarColor, setSkillBarColor] = useState("rgb(8, 7, 12)");
+	const [contactColor, setContactColor] = useState("rgb(8, 7, 12)");
+	//nouvelle couleur foncé du theme vert rgba(7,12,8,255)
+	//nouvelle couleur clair du theme vert rgb (9, 27, 13)
+	const [formColor, setFormColor] = useState("rgba(9, 14, 27, 1)");
 
-	const backgroundChange = (newBackground, newBackGroundBottom) => {
+	const backgroundChange = (newBackground, newBackGroundBottom, skillBarNewColor, contactNewColor, formNewColor) => {
 		setBackground(newBackground)
 		setBackgroundBottom(newBackGroundBottom)
+		setSkillBarColor(skillBarNewColor)
+		setContactColor(contactNewColor)
+		setFormColor(formNewColor)
 	}
 
 
@@ -77,7 +86,7 @@ export default function Home() {
 					</div>
 					<div className="canvasContainer">
 						<Canvas className="canvas">
-							<Viewer backgroundChange={backgroundChange}/>
+							<Viewer backgroundChange={backgroundChange} />
 						</Canvas>
 					</div>
 				</div>
@@ -85,7 +94,7 @@ export default function Home() {
 					<Next />
 				</div>
 			</div>
-			<SkillBar>
+			<SkillBar color={skillBarColor}>
 				{isMobile ?
 					skillsLogo.slice(0, 8).map((logo, index) => (
 						<Skills key={index} logo={logo} />
@@ -116,7 +125,7 @@ export default function Home() {
 				</div>
 			</div>
 
-			<Contact/>
+			<Contact color={contactColor} color2={formColor}/>
 			<Footer/>
 		</>
 	);
