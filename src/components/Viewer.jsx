@@ -7,9 +7,8 @@ import ReactAudioPlayer from "react-audio-player";
 
 export default function Viewer({
 	backgroundChange,
-	violetThemeBas,
-	violetThemeHaut,
-	skillBarColor,
+	greenThemeColorList,
+	blueThemeColorList,
 }) {
 	console.log(backgroundChange);
 
@@ -36,28 +35,12 @@ export default function Viewer({
 			setColor("rgb(71, 235, 21)");
 			setLightColor("rgb(160, 194, 151)");
 			setIntensity(1);
-			backgroundChange(
-				"/pictures/fondHautVert.jpg", //fond haut theme vert
-				"/pictures/fondBasVert.jpg", //fond bas theme vert
-				"rgba(7,12,8,255)", // skillBarColor theme vert
-				"rgba(7,12,8,255)", //contactColor theme vert
-				"rgb(9, 27, 13)", //formColor theme vert
-				"rgba(7,12,8,255)", //footerColor theme vert
-				" #2bff24"
-			);
+			backgroundChange(greenThemeColorList);
 		} else {
 			setColor("rgb(81, 204, 232)");
 			setLightColor("rgb(50, 50, 92)");
 			setIntensity(15);
-			backgroundChange(
-				"/pictures/fondHaut.jpg", //fond haut theme bleu
-				"/pictures/fondBas.jpg", //fond bas theme bleu
-				"rgb(8, 7, 12)", // skillBarColor theme bleu
-				"rgb(8, 7, 12)", //contactColor theme bleu
-				" rgba(9, 14, 27, 1)", //formColor theme bleu
-				"rgb(8, 7, 12)", //footerColor theme bleu
-				"#24ceff"
-			);
+			backgroundChange(blueThemeColorList);
 		}
 	};
 

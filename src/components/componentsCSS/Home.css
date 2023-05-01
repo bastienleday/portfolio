@@ -33,12 +33,7 @@
 
 .welcome {
 	font-size: 1.2rem;
-	background: rgb(9, 14, 27);
-	background: linear-gradient(
-		90deg,
-		rgba(9, 14, 27, 1) 0%,
-		rgba(3, 3, 3, 1) 100%
-	);
+
 	width: 35%;
 
 	display: flex;
@@ -124,10 +119,21 @@
 	border: white solid 1px;
 	transition: all 0.1s ease-in-out;
 }
-.buttonCircularLink:hover {
+.buttonHover {
+	transition: all 0.1s ease-in-out;
+}
+.buttonHoverGreen {
+	transition: all 0.1s ease-in-out;
+}
+.buttonHover:hover {
 	animation: circle 0.1s ease-in;
 	border: 2px solid #3d9dea;
 	box-shadow: 1px 2px 27px 2px #24ceff /* #2bff24;*/;
+}
+.buttonHoverGreen:hover {
+	animation: circle 0.1s ease-in;
+	border: 2px solid #2bff24;
+	box-shadow: 1px 2px 27px 2px #2bff24 /* #2bff24;*/;
 }
 @keyframes circle {
 	0% {

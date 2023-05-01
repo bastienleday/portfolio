@@ -20,7 +20,6 @@ export default function SkillBar({ children, color }) {
 				if (entry.isIntersecting) {
 					// Vérifier si l'élément est visible dans le viewport
 					gsap.to(entry.target, {
-
 						duration: 1,
 						delay: 0.2,
 						display: "flex",
@@ -30,8 +29,6 @@ export default function SkillBar({ children, color }) {
 							start: "top 20%",
 							end: "bottom 30%",
 							toggleActions: "restart none none reverse",
-
-
 						},
 					});
 					observer.unobserve(entry.target); // Arrêter d'observer une fois que l'animation est déclenchée
@@ -51,7 +48,7 @@ export default function SkillBar({ children, color }) {
 	}, []);
 
 	return (
-		<div className="skillContainer" style={{backgroundColor : color}}>
+		<div className="skillContainer" style={{ backgroundColor: color }}>
 			<div className="skillContent" ref={skillContainer}>
 				{children}
 			</div>

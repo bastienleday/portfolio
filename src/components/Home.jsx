@@ -16,38 +16,16 @@ import Footer from "./Footer.jsx";
 import { useMediaQuery } from "@mui/material";
 import ReactAudioPlayer from "react-audio-player";
 import Audio from "./Audio.jsx";
+import BlueBasicTheme from "./BlueThemeColor";
+import GreenThemeColor from "./GreenThemeColor";
 
 export default function Home() {
-	const [background, setBackground] = useState("/pictures/fondHaut.jpg");
-	const [backgroundBottom, setBackgroundBottom] = useState(
-		"/pictures/fondBas.jpg"
-	);
-	//couleur de base foncé du theme violet
-	const [skillBarColor, setSkillBarColor] = useState("rgb(8, 7, 12)");
-	const [contactColor, setContactColor] = useState("rgb(8, 7, 12)");
-	//nouvelle couleur foncé du theme vert rgba(7,12,8,255)
-	//nouvelle couleur clair du theme vert rgb (9, 27, 13)
-	const [formColor, setFormColor] = useState("rgba(9, 14, 27, 1)");
-	const [footerColor, setFooterColor] = useState("rgb(8, 7, 12)");
-	const [CircularLinkColor, setCircularLinkColor] = useState("#24ceff");
+	const [themeColor, setThemeColor] = useState(BlueBasicTheme);
 
-	const backgroundChange = (
-		newBackground,
-		newBackGroundBottom,
-		skillBarNewColor,
-		contactNewColor,
-		formNewColor,
-		newFooterColor,
-		newCircularLinkColor
-	) => {
-		setBackground(newBackground);
-		setBackgroundBottom(newBackGroundBottom);
-		setSkillBarColor(skillBarNewColor);
-		setContactColor(contactNewColor);
-		setFormColor(formNewColor);
-		setFooterColor(newFooterColor);
-		setCircularLinkColor(newCircularLinkColor);
+	const backgroundChange = (colorObject) => {
+		setThemeColor(colorObject);
 	};
+	console.log(themeColor.dark);
 
 	const isMobile = useMediaQuery("(max-width: 1000px)");
 	const skillsLogo = [
@@ -69,13 +47,16 @@ export default function Home() {
 
 	return (
 		<>
-			<div className="home" style={{ backgroundImage: `url(${background})` }}>
+			<div
+				className="home"
+				style={{ backgroundImage: `url(${themeColor.backgroundTop})` }}
+			>
 				<Audio />
 
-				<NavBar color={CircularLinkColor} />
+				<NavBar color={themeColor.ultraLight} hover={themeColor.hover} />
 				<div className="gros">
 					<div className="homeContent">
-						<Welcome />
+						<Welcome color={themeColor.light} color2={themeColor.dark} />
 						<h1 className="title">
 							Bastien Leday, <br /> Developpeur Web
 						</h1>
@@ -95,7 +76,11 @@ export default function Home() {
 					</div>
 					<div className="canvasContainer">
 						<Canvas className="canvas">
-							<Viewer backgroundChange={backgroundChange} />
+							<Viewer
+								backgroundChange={backgroundChange}
+								greenThemeColorList={GreenThemeColor}
+								blueThemeColorList={BlueBasicTheme}
+							/>
 						</Canvas>
 					</div>
 				</div>
@@ -103,7 +88,7 @@ export default function Home() {
 					<Next />
 				</div>
 			</div>
-			<SkillBar color={skillBarColor}>
+			<SkillBar color={themeColor.dark}>
 				{isMobile
 					? skillsLogo
 							.slice(0, 8)
@@ -112,7 +97,7 @@ export default function Home() {
 			</SkillBar>
 			<div
 				className="projectsContainer"
-				style={{ backgroundImage: `url(${backgroundBottom})` }}
+				style={{ backgroundImage: `url(${themeColor.backgroundBottom})` }}
 			>
 				<div className="projectTitle">
 					<p>Projects</p>
@@ -135,8 +120,8 @@ export default function Home() {
 				</div>
 			</div>
 
-			<Contact color={contactColor} color2={formColor} />
-			<Footer color={footerColor} />
+			<Contact color={themeColor.dark} color2={themeColor.light} />
+			<Footer color={themeColor.dark} />
 		</>
 	);
 }
