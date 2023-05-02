@@ -64,14 +64,14 @@ export default function Home() {
 							En tant que développeur, je suis passionné par la création
 							d'expériences web et par la 3D que je prends plaisir à intégrer à
 							ces expériences. J'utilise des outils tels que Three.js, blender
-							et substance painter qui conjugués ensembles donnent vie à des
-							applications web uniques et originales. J'aime créer des
-							interfaces interactives et immersives pour les utilisateurs, et je
-							suis toujours à la recherche de nouvelles façons d'améliorer mes
+							et substance painter. Conjugués ils donnent vie à des applications
+							web uniques et originales. J'aime créer des interfaces
+							interactives et immersives pour les utilisateurs et je suis
+							toujours à la recherche de nouvelles façons d'améliorer mes
 							compétences de développement. Mon approche est axée sur la
-							créativité et j'aime explorer de nouvelles idées, de nouveaux
+							créativité, j'aime explorer de nouvelles idées, de nouveaux
 							languages et concepts pour offrir une expérience unique et
-							engageante pour les utilisateurs de mes applications web.
+							engageante pour les utilisateurs.
 						</p>
 					</div>
 					<div className="canvasContainer">

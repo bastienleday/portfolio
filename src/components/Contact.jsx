@@ -63,7 +63,7 @@ export default function Contact({ color, color2 }) {
 					Subject:
 					<input
 						type="text"
-						name="subject"
+						name="sujet"
 						value={formData.subject}
 						onChange={handleChange}
 						required={true}
@@ -73,7 +73,7 @@ export default function Contact({ color, color2 }) {
 					Name:
 					<input
 						type="text"
-						name="name"
+						name="nom"
 						value={formData.name}
 						onChange={handleChange}
 						required={true}
