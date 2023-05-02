@@ -212,15 +212,11 @@ audio {
 	align-items: center;
 	border-radius: 50%;
 	border: #1d1a2a solid 1px;
-	transition: all 0.1s ease-in-out;
+	/*transition: all 0.1s ease-in-out;*/
 	z-index: 2;
 	position: fixed;
 }
-.playAudio:hover {
-	animation: circle 0.1s ease-in;
-	border: 2px solid #3d9dea;
-	box-shadow: 1px 2px 27px 2px #24ceff;
-}
+
 @keyframes circle {
 	0% {
 		transform: scale(1);

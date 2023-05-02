@@ -1,5 +1,5 @@
 import CircularLink from "./CircularLink.jsx";
-import Audio from "./Audio.jsx";
+
 
 export default function NavBar({ color, hover }) {
 	return (

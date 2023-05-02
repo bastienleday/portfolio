@@ -6,7 +6,7 @@ import {useEffect, useRef, useState} from "react";
 
 
 
-export default function Audio() {
+export default function Audio({hover}) {
 
 
 
@@ -36,7 +36,7 @@ export default function Audio() {
             <>
 
                 <audio src="/sound/suspens.mp3" controls loop ref={audio}  ></audio>
-                <button className="playAudio" onClick={handleClick} ref={audioButton}>
+                <button className={`playAudio ${hover}`} onClick={handleClick} ref={audioButton}>
                     <img src={"/sound/pause.png"} alt="play" className="audioLogo" />
                 </button>
 

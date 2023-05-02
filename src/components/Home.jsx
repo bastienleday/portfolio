@@ -51,7 +51,7 @@ export default function Home() {
 				className="home"
 				style={{ backgroundImage: `url(${themeColor.backgroundTop})` }}
 			>
-				<Audio />
+				<Audio hover={themeColor.hover} />
 
 				<NavBar color={themeColor.ultraLight} hover={themeColor.hover} />
 				<div className="gros">
