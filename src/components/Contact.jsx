@@ -60,20 +60,20 @@ export default function Contact({ color, color2 }) {
 				}}
 			>
 				<label>
-					Subject:
+					Sujet:
 					<input
 						type="text"
-						name="sujet"
+						name="subject"
 						value={formData.subject}
 						onChange={handleChange}
 						required={true}
 					/>
 				</label>
 				<label>
-					Name:
+					Nom:
 					<input
 						type="text"
-						name="nom"
+						name="name"
 						value={formData.name}
 						onChange={handleChange}
 						required={true}
