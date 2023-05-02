@@ -101,7 +101,7 @@ export default function Contact({ color, color2 }) {
 
 				<input
 					type="submit"
-					value="Submit"
+					value="envoyer"
 					className="submit"
 					style={{ backgroundColor: color2 }}
 				/>
