@@ -100,7 +100,7 @@ export default function Home() {
 				style={{ backgroundImage: `url(${themeColor.backgroundBottom})` }}
 			>
 				<div className="projectTitle">
-					<p>Projects</p>
+					<p>Projets</p>
 				</div>
 				<a href={"https://github.com/bastienleday/portfolio"} target="blank">
 					<ProjectCard techno={["react js", "react three fiber"]}>
